@@ -1,6 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"fmt"
+	"github.com/gin-gonic/gin"
+	"time"
+)
 
 //func main() {
 //	// 禁用控制台颜色
@@ -29,5 +33,22 @@ import "github.com/gin-gonic/gin"
 func main() {
 	r := gin.Default()
 
-	r.Use(gin.LoggerWithFormatter())
+	r.Use(gin.LoggerWithFormatter(func(param gin.LogFormatterParams) string {
+		return fmt.Sprintf("%s - [%s] \"%s %s %s %d %s \"%s\" %s\"\n",
+			param.ClientIP,
+			param.TimeStamp.Format(time.RFC1123),
+			param.Method,
+			param.Path,
+			param.Request.Proto,
+			param.StatusCode,
+			param.Latency,
+			param.Request.UserAgent(),
+			param.ErrorMessage,
+		)
+	}))
+
+	r.GET("/", func(c *gin.Context) {
+		c.String(200, "Dyi log fmt")
+	})
+	r.Run(":8080")
 }
