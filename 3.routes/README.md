@@ -128,6 +128,22 @@ func main() {
 }
 ```
 
+## 接收参数
+
+**获取GET参数**
+
+```go
+firstname := c.DefaultQuery("firstname", "Guest")
+lastname := c.Query("lastname") // 是 c.Request.URL.Query().Get("lastname") 的简写
+```
+
+**获取POST参数**
+
+```go
+message := c.PostForm("message")
+nick := c.DefaultPostForm("nick", "anonymous") // 此方法可以设置默认值
+```
+
 ## 路由分组
 
 使用函数 router.Group() 完成分组的创建。创建时可以提供路径前缀和公用中间件，router.Group() 函数签名如下：

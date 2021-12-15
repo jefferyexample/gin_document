@@ -48,7 +48,7 @@ func main() {
 	}))
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(200, "Dyi log fmt")
+		c.String(200, "Diy log fmt")
 	})
 	r.Run(":8080")
 }
