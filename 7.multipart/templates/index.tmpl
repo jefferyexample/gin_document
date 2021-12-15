@@ -1,0 +1,21 @@
+<html>
+    <h1>
+        {{ .title }}
+    </h1>
+    <form action="/form_post" method="post">
+        <table>
+            <tr>
+                <td>message：</td>
+                <td><input type="text" name="message"></td>
+            </tr>
+            <tr>
+                <td>nick：</td>
+                <td><input type="text" name="nick"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</html>

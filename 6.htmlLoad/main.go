@@ -11,7 +11,7 @@ func main() {
 	// 写法1
 	router.LoadHTMLGlob("templates/*")
 	router.GET("/1", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "template1.html", gin.H{
+		c.HTML(http.StatusOK, "index.tmpl", gin.H{
 			"title": "写法1 LoadHTMLGlob",
 		})
 	})
