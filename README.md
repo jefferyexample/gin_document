@@ -18,6 +18,8 @@
 - [BasicAuth中间件](https://github.com/jefferyexample/gin_module_example/tree/master/16.BasicAuth)
 - [映射表单参数](https://github.com/jefferyexample/gin_module_example/tree/master/17.formQuery)
 - [多种数据格式渲染](https://github.com/jefferyexample/gin_module_example/tree/master/18.XmlJsonYamlProtobuf)
+- [静态资源嵌入](https://github.com/jefferyexample/gin_module_example/tree/master/19.staticEmbel)
+- [优雅重启或停止](https://github.com/jefferyexample/gin_module_example/tree/master/20.niceReload)
 
 
 
