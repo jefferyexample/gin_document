@@ -20,6 +20,7 @@
 - [多种数据格式渲染](https://github.com/jefferyexample/gin_module_example/tree/master/18.XmlJsonYamlProtobuf)
 - [静态资源嵌入](https://github.com/jefferyexample/gin_module_example/tree/master/19.staticEmbel)
 - [优雅重启或停止](https://github.com/jefferyexample/gin_module_example/tree/master/20.niceReload)
+- [编写测试用例](https://github.com/jefferyexample/gin_module_example/tree/master/20.tests)
 
 
 
