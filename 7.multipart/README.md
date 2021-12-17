@@ -1,7 +1,7 @@
 # Multipart/Urlencoded
 
 若要将请求主体绑定到结构体中，请使用模型绑定，目前支持JSON、XML、YAML和标准表单值(foo=bar&boo=baz)的绑定。  
-Gin使用 [go-playground/validator.v8](https://github.com/go-playground/validator) 验证参数，[查看完整文档](https://godoc.org/gopkg.in/go-playground/validator.v8#hdr-Baked_In_Validators_and_Tags) 。  
+Gin使用 [go-playground/validator.v10](https://github.com/go-playground/validator) 验证参数，[查看完整文档](https://pkg.go.dev/gopkg.in/go-playground/validator.v10) 。  
 需要在绑定的字段上设置tag，比如，绑定格式为json，需要这样设置 `json:"fieldname"` 。 
 
 ## Gin提供的两套绑定方法
